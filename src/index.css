@@ -37,10 +37,16 @@ nav ul li a.active {
   margin-bottom: 5em;
 }
 
+@media only screen and (max-width: 768px) {
+  .my-custom-top-banner {
+    height: 200px;
+  }
+}
+
 .my-custom-top-banner::before {
   content: "";
   display: flex;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.6);
   position: absolute;
   top: 0;
   bottom: 0;
