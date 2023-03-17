@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { StateContext } from "../context/StateContext";
 import { GiKnifeFork } from "react-icons/gi";
-import { GrClose } from "react-icons/gr";
+import { VscChromeClose } from "react-icons/vsc";
 import { RiMenu3Fill } from "react-icons/ri";
 
 const HeaderNavbar = () => {
@@ -32,37 +32,37 @@ const HeaderNavbar = () => {
 
   return (
     <div>
-      <nav className="relative bg-amber-300 border-gray-200 dark:bg-gray-900 dark:border-gray-700 mb-20">
+      <nav className="relative bg-black border-gray-200 dark:bg-gray-900 dark:border-gray-700 mb-20">
         <div className="w-[100%] md:w-[100%] lg:w-[1024px] box-border py-5 px-3 md:px-0 flex flex-wrap items-center justify-between mx-auto">
           <Link to="/" onClick={homeResetHandler}>
-            <GiKnifeFork className="text-5xl text-orange-700" />
+            <GiKnifeFork className="text-5xl text-amber-400" />
           </Link>
           <button
             onClick={() => {
               setDropdown(!dropdown);
             }}
-            className="block md:hidden text-3xl"
+            className="block md:hidden text-3xl text-white"
           >
-            {dropdown ? <GrClose /> : <RiMenu3Fill />}
+            {dropdown ? <VscChromeClose /> : <RiMenu3Fill />}
           </button>
           <div
             className={`${
               dropdown ? "block md:block" : "hidden md:block"
             } w-[96%] box-border md:w-auto absolute md:static z-50 inset-x-[2%] top-[100%]`}
           >
-            <ul className="flex flex-col p-3 md:p-0 border rounded-b-lg border-gray-100 bg-gray-50 text-normal md:flex-row md:space-x-8 md:mt-0 md:text-normal md:font-medium md:border-0 md:bg-transparent items-normal md:items-center">
+            <ul className="flex flex-col p-3 md:p-0 border border-gray-300 rounded-b-lg bg-gray-100 text-lg md:flex-row md:space-x-8 md:mt-0 md:text-normal md:font-medium md:border-0 md:bg-transparent items-normal md:items-center">
               <li>
-                <NavLink to="/" className="block py-1">
+                <NavLink to="/" className="block py-1 md:text-white">
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="block py-1">
+                <NavLink to="/about" className="block py-1 md:text-white">
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="block py-1">
+                <NavLink to="/contact" className="block py-1 md:text-white">
                   Contact
                 </NavLink>
               </li>
@@ -72,7 +72,7 @@ const HeaderNavbar = () => {
                     value={input}
                     type="text"
                     onChange={onChangeHandler}
-                    className="my-custom-search outline-0 py-2 px-3 rounded appearance-none min-w-[100%] md:min-w-[220px] border border-gray-200 md:border-0 focus:outline-none"
+                    className="my-custom-search outline-0 py-2 px-3 rounded appearance-none min-w-[100%] md:min-w-[220px] border border-gray-400 md:border-0 focus:outline-none"
                   />
                 </form>
               </li>
@@ -80,64 +80,6 @@ const HeaderNavbar = () => {
           </div>
         </div>
       </nav>
-      {/* <nav className="bg-amber-300 border-gray-200 dark:bg-gray-900 dark:border-gray-700 mb-20">
-        <div className="w-[100%] md:w-[100%] lg:w-[1024px] box-border py-5 px-3 md:px-0 flex flex-wrap items-center justify-between mx-auto">
-          <Link to="/" onClick={homeResetHandler}>
-            <GiKnifeFork className="text-5xl text-orange-700" />
-          </Link>
-          <button
-            data-collapse-toggle="navbar-dropdown"
-            type="button"
-            className="inline-flex items-center p-2 ml-3 text-normal text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-dropdown"
-            aria-expanded="false"
-          >
-            <span className="sr-only">Open main menu</span>
-            <HiMenuAlt1 className="text-2xl text-black" />
-          </button>
-          <div
-            className="hidden w-full md:block md:w-auto"
-            id="navbar-dropdown"
-          >
-            <ul className="flex flex-col p-3 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 text-normal md:flex-row md:space-x-8 md:mt-0 md:text-normal md:font-medium md:border-0 md:bg-transparent items-normal md:items-center">
-              <li>
-                <NavLink
-                  to="/"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contact"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Contact
-                </NavLink>
-              </li>
-              <li>
-                <form onSubmit={onSubmitHandler} className="mt-5 md:m-0">
-                  <input
-                    value={input}
-                    type="text"
-                    onChange={onChangeHandler}
-                    className="my-custom-search outline-0 py-2 px-3 rounded appearance-none min-w-[100%] md:min-w-[220px] md:border-0 focus:outline-none"
-                  />
-                </form>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav> */}
     </div>
   );
 };

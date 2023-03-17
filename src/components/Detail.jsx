@@ -54,7 +54,7 @@ const Detail = () => {
                 <button
                   onClick={() => setActiveTab("tab01")}
                   className={`py-2 px-3 rounded ${
-                    activeTab === "tab01" ? "bg-amber-300" : "bg-gray-100"
+                    activeTab === "tab01" ? "bg-amber-400" : "bg-gray-100"
                   }`}
                 >
                   Instructions
@@ -64,7 +64,7 @@ const Detail = () => {
                 <button
                   onClick={() => setActiveTab("tab02")}
                   className={`py-2 px-3 rounded ${
-                    activeTab === "tab02" ? "bg-amber-300" : "bg-gray-100"
+                    activeTab === "tab02" ? "bg-amber-400" : "bg-gray-100"
                   }`}
                 >
                   Ingredients
@@ -74,7 +74,7 @@ const Detail = () => {
                 <button
                   onClick={() => setActiveTab("tab03")}
                   className={`py-2 px-3 rounded ${
-                    activeTab === "tab03" ? "bg-amber-300" : "bg-gray-100"
+                    activeTab === "tab03" ? "bg-amber-400" : "bg-gray-100"
                   }`}
                 >
                   References

@@ -30,7 +30,7 @@ const About = () => {
             return (
               <div
                 key={cat.idCategory}
-                className="my-custom-cate-wrap w-[48%] md:w-[31.333%] lg:w-[18%] box-border mx-[1%] py-4 mb-7 text-center border-b-4 border-amber-300"
+                className="my-custom-cate-wrap w-[48%] md:w-[31.333%] lg:w-[18%] box-border mx-[1%] py-4 mb-7 text-center border-b-4 border-black"
               >
                 <Link to={`/category/${cat.strCategory}`}>
                   <div>
