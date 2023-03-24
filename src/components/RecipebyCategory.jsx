@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Loader from "../../../ec_site/src/components/Loader";
+import Loader from "./Loader";
 import { StateContext } from "../context/StateContext";
 import PageTemplate from "./PageTemplate";
 import Recipe from "./Recipe";

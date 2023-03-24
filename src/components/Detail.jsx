@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { BsYoutube } from "react-icons/bs";
 import { StateContext } from "../context/StateContext";
-import Loader from "../../../ec_site/src/components/Loader";
+import Loader from "./Loader";
 import PageTemplate from "./PageTemplate";
 
 const Detail = () => {
