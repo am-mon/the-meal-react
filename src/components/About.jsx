@@ -28,31 +28,28 @@ const About = () => {
           <h2 className="text-2xl mb-10 text-center font-normal">
             Recipes by Category
           </h2>
-          {isLoading ? (
-            <Loader />
-          ) : (
-            <div className="flex flex-wrap justify-start">
-              {cateList.map((cat) => {
-                return (
-                  <div
-                    key={cat.idCategory}
-                    className="my-custom-cate-wrap w-[48%] md:w-[31.333%] lg:w-[18%] box-border mx-[1%] py-4 mb-7 text-center border-b-4 border-black"
-                  >
-                    <Link to={`/category/${cat.strCategory}`}>
-                      <div>
-                        <img src={cat.strCategoryThumb} />
-                      </div>
-                      <div className="mt-5">{cat.strCategory}</div>
-                      <span className="my-custom-cate-view underline decoration-1 text-sm">
-                        View all <br />
-                        {cat.strCategory} recipes{" "}
-                      </span>
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-          )}
+
+          <div className="flex flex-wrap justify-start">
+            {cateList.map((cat) => {
+              return (
+                <div
+                  key={cat.idCategory}
+                  className="my-custom-cate-wrap w-[48%] md:w-[31.333%] lg:w-[18%] box-border mx-[1%] py-4 mb-7 text-center border-b-4 border-black"
+                >
+                  <Link to={`/category/${cat.strCategory}`}>
+                    <div>
+                      <img src={cat.strCategoryThumb} />
+                    </div>
+                    <div className="mt-5">{cat.strCategory}</div>
+                    <span className="my-custom-cate-view underline decoration-1 text-sm">
+                      View all <br />
+                      {cat.strCategory} recipes{" "}
+                    </span>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </PageTemplate>
     </>
