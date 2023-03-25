@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { BsYoutube } from "react-icons/bs";
 import { StateContext } from "../context/StateContext";
 import Loader from "./Loader";
@@ -133,6 +133,11 @@ const Detail = () => {
                   </div>
                 )}
               </div>
+              <Link to="/">
+                <button class="mt-5 py-2 px-3 rounded bg-black text-white hover:bg-amber-400 hover:text-black">
+                  Back to Recipes
+                </button>
+              </Link>
             </div>
           </div>
         )}
