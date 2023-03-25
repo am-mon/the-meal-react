@@ -13,7 +13,7 @@ import PageTemplate from "./PageTemplate";
 const Contact = () => {
   return (
     <>
-      <TopBanner>Contact</TopBanner>
+      <TopBanner>Contact Us</TopBanner>
       <PageTemplate>
         <div className="flex flex-wrap justify-between">
           <div className="w-[100%] md:w-[50%] box-border px-0 md:pr-10 mb-10">

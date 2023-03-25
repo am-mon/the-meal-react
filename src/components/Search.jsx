@@ -39,8 +39,8 @@ const Search = () => {
       <PageTemplate>
         {search ? (
           <div>
-            <h1 className="text-2xl mb-10 text-center font-medium">
-              - Search Results. -
+            <h1 className="text-2xl mb-20 text-center font-medium">
+              Search Results for "{name}"
             </h1>
             {isLoading ? (
               <Loader />

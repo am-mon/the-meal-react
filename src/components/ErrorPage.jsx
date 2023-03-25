@@ -5,9 +5,7 @@ const ErrorPage = () => {
   return (
     <div className="py-40">
       <PageTemplate>
-        <h1 className="text-2xl mb-5 text-center font-medium">
-          - 404 Not Found -
-        </h1>
+        <h1 className="text-2xl text-center font-medium">404 Not Found</h1>
       </PageTemplate>
     </div>
   );

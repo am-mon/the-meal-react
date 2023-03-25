@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <>
-      <TopBanner>About</TopBanner>
+      <TopBanner>About Us</TopBanner>
       <PageTemplate>
         <div className="mb-20">
           <p className="mb-10 text-center">
