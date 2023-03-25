@@ -50,7 +50,7 @@ const Detail = () => {
         ) : (
           <div className="flex flex-wrap justify-center">
             <div className="w-[100%] md:w-[50%] lg:w-[50%] box-border px-0 md:pr-5 mb-5 ">
-              <img src={recipe.strMealThumb} className="w-[100%]" />
+              <img src={recipe.strMealThumb} className="w-[100%] rounded" />
             </div>
             <div className="w-[100%] md:w-[50%] lg:w-[50%] box-border px-0 pr-2 md:pl-5 mb-5 ">
               <h1 className="text-2xl mt-2">{recipe.strMeal}</h1>

@@ -51,7 +51,7 @@ const HeaderNavbar = () => {
               dropdown ? "block md:block" : "hidden md:block"
             } w-[96%] box-border md:w-auto absolute md:static z-50 inset-x-[2%] top-[100%]`}
           >
-            <ul className="flex flex-col p-3 md:p-0 border border-gray-300 rounded-b-lg bg-gray-100 text-lg md:flex-row md:space-x-8 md:mt-0 md:text-normal md:font-medium md:border-0 md:bg-transparent items-normal md:items-center">
+            <ul className="flex flex-col shadow-md md:shadow-none p-3 md:p-0 rounded-b-lg bg-gray-100 text-lg md:flex-row md:space-x-8 md:mt-0 md:text-normal md:font-medium md:bg-transparent items-normal md:items-center">
               <li>
                 <NavLink to="/" className="block py-1 md:text-white">
                   Home
@@ -67,8 +67,8 @@ const HeaderNavbar = () => {
                   Contact
                 </NavLink>
               </li>
-              <li>
-                <form onSubmit={onSubmitHandler} className="mt-5 md:m-0">
+              <li className="-order-1 md:order-none">
+                <form onSubmit={onSubmitHandler} className="mt-4 mb-5 md:m-0">
                   <input
                     value={input}
                     type="text"
