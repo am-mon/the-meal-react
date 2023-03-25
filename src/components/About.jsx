@@ -26,7 +26,7 @@ const About = () => {
 
         <div>
           <h2 className="text-2xl mb-10 text-center font-normal">
-            Recipes by Category
+            Our Recipes by Category
           </h2>
           {isLoading ? (
             <Loader />
