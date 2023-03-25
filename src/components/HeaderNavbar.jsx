@@ -34,7 +34,7 @@ const HeaderNavbar = () => {
   return (
     <>
       <nav className="relative bg-black border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-        <div className="w-[100%] md:w-[100%] lg:w-[1024px] box-border py-5 px-3 md:px-0 flex flex-wrap items-center justify-between mx-auto">
+        <div className="w-[100%] md:w-[100%] lg:w-[1024px] box-border py-5 px-3 md:px-3 flex flex-wrap items-center justify-between mx-auto">
           <Link to="/" onClick={homeResetHandler}>
             <GiKnifeFork className="text-5xl text-amber-400" />
           </Link>
