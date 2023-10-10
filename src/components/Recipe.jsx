@@ -12,7 +12,7 @@ const Recipe = ({ item }) => {
           <FiSearch className="text-2xl bg-black rounded-[50%] p-2 box-content text-amber-400" />
         </span>
       </Link>
-      <p className="mt-3">{item.strMeal}</p>
+      <p className="my-3">{item.strMeal}</p>
     </div>
   );
 };
