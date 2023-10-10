@@ -26,7 +26,7 @@ nav ul li a.active {
 
 .my-custom-top-banner {
   position: relative;
-  height: 400px;
+  height: 600px;
   background-repeat: no-repeat !important;
   background-position: center center;
   background-size: cover;
@@ -39,7 +39,7 @@ nav ul li a.active {
 
 @media only screen and (max-width: 768px) {
   .my-custom-top-banner {
-    height: 200px;
+    height: 300px;
   }
 }
 

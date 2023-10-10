@@ -26,7 +26,7 @@ const Recipes = () => {
     );
     const data = await api.json();
     setRecipes(data.meals);
-    // console.log(data.meals);
+    console.log(data.meals);
     setIsLoading(false);
   };
 

@@ -14,13 +14,22 @@ const About = () => {
       <PageTemplate>
         <div className="mb-20">
           <p className="mb-10 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rem
-            perferendis ipsum natus, quasi distinctio possimus minima
-            repellendus nobis error fugiat, id odio dolorum quaerat quia,
-            molestias facilis. In, aliquam! Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Voluptas quibusdam perferendis
-            doloribus autem non culpa recusandae nemo eum! Magnam quos accusamus
-            vel itaque laboriosam ad voluptas, recusandae nihil iste soluta!
+            This Meal App is using the API from{" "}
+            <a href="https://www.themealdb.com/" target="_blank">
+              TheMealDB.com
+            </a>
+            . <br />
+            <br />
+            <p className="max-w-[800px] mx-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rem
+              perferendis ipsum natus, quasi distinctio possimus minima
+              repellendus nobis error fugiat, id odio dolorum quaerat quia,
+              molestias facilis. In, aliquam! Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Voluptas quibusdam perferendis
+              doloribus autem non culpa recusandae nemo eum! Magnam quos
+              accusamus vel itaque laboriosam ad voluptas, recusandae nihil iste
+              soluta!
+            </p>
           </p>
         </div>
 
